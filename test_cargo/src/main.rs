@@ -35,18 +35,6 @@ fn guessing_game(){
 	}
 }
 
-enum Choises{
-	Change_sentiment,
-	Identify_vague_keys,
-	Search_item_in_base,
-	Add_item_to_project
-}
-
-impl Choises{
-	fn start(&self) {
-		println!("sdfas")
-	}
-}
-
 fn main() {
+	let mut _x = String::from("hello");
 }
