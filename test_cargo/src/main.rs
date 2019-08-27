@@ -35,6 +35,26 @@ fn guessing_game(){
 	}
 }
 
+#[allow(dead_code)]
+fn first_word(string_word: &str) -> &str{
+	let b_string_word = string_word.as_bytes();
+	for (index,&value) in b_string_word.iter().enumerate() {
+		if value == b' '{
+			return &string_word[0..index];
+			// println!("Индекс пробела - {:?}. Значение - {:?}",index,value );
+		}
+	}
+	&string_word[..]
+
+	// main_body
+	// let mut string = String::from("Hello everybody");
+	// let mut string_literal = "Hello everybody";
+	// let word = first_word(&string);
+	// let word_literal_with_pointer = first_word(&string_literal);
+	// let word_literal = first_word(string_literal);
+	// string.clear();
+}
+
+
 fn main() {
-	let mut _x = String::from("hello");
 }
